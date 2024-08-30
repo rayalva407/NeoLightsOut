@@ -29,5 +29,7 @@ public class MainActivity extends AppCompatActivity {
             NavigationUI.setupActionBarWithNavController(this, navController, appBarConfig);
             NavigationUI.setupWithNavController(navView, navController);
         }
+
+        navView.setOnItemReselectedListener(item -> { });
     }
 }
